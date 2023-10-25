@@ -6,11 +6,12 @@
 
 body {
     margin: 0;
+    
 }
 
 .header {
-      border-bottom: 3px solid #bab8b5;
-      margin: 0px 0px 3px 0px;
+      border-bottom: 3px solid #5c5b5b;
+      margin: 0px 0px 0px 0px;
       background-color: rgb(15, 14, 14);
 
 }
@@ -34,13 +35,16 @@ body {
 
     .header a {
         text-decoration: none;
-        color: rgb(241, 236, 221);
+        color: rgb(243, 243, 243);
+        text-shadow: 0 0 10px whitesmoke;
                  
+
        }
+       
        
        .header h1 {
        
-           color: #bab8b5;
+           color: #f1eadf;
        
        }
        .container {
@@ -53,8 +57,9 @@ body {
     
     .banner {
     
-          background-image: url(assets/img/background.png);
+          background-image: url(../assets/img/background.png);
           background-size: cover;
+          background-position: center center;
     
     }
     
