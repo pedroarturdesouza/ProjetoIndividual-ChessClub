@@ -1,0 +1,125 @@
+
+*{
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+}
+
+
+
+body {
+    margin: 0;
+    
+}
+
+.header {
+      border-bottom: 3px solid #FBFCF6;
+      margin: 0px 0px 0px 0px;
+      background-color: rgb(15, 14, 14);
+
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FBFCF6;
+    transition: all .4s ease-in-out;
+    z-index: 2;
+}
+
+.header .container  {
+
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container ul {
+  
+    width: 400px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(224, 224, 224)    ; }
+
+    #header .nav ul {
+        list-style: none;
+        display: flex;
+        padding-right: 60px;
+    }
+
+    #header .nav ul li {
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--secondary-color);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        user-select: none;
+        cursor: pointer;
+        background-image: linear-gradient(to right, #3ca9c2, #3ca9c2 50%, #313131 50%);
+        background-size: 200% 100%;
+        background-position: 100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all .4s ease-in-out;
+        margin: 0 20px;
+    }
+
+    
+
+    .header a {
+        text-decoration: none;
+        color: rgb(243, 243, 243);
+        text-shadow: 0 0 10px whitesmoke;
+                 
+
+       }
+       #header .nav img {
+        margin: 12px 0 0 80px;
+        height: 80px;
+        cursor: pointer;
+        user-select: none;
+        pointer-events: none;
+    }
+       
+       
+       .header h1 {
+       
+           color: #f1eadf;
+       
+       }
+       .container {
+
+        display: flex;
+        width: 80%;
+        margin:auto;
+    
+    }
+    
+    .banner {
+    
+        
+            background: rgb(176,176,176);
+            background: linear-gradient(0deg, rgba(176,176,176,1) 0%, rgba(112,112,112,1) 35%, rgba(23,23,23,1) 100%); 
+        
+    
+    }
+    
+    .banner .container {
+    
+        justify-content: center;
+        align-items: center;
+        height: 620px;
+    
+    }
+    
+    .banner .container p {
+    
+        font-size: 36px;
+        color: white;
+        width: 280px;
+    }

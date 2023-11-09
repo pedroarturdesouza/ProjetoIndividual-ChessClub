@@ -1,0 +1,24 @@
+#gameboard {
+   width: 320px;
+   height: 320px;
+   display: flex;
+   flex-wrap: wrap;
+
+}
+
+.casa {
+
+  width: 40px;
+  height: 40px;
+
+
+}
+.bege {
+
+    background-color: rgb(110, 110, 98);
+}
+
+.marrom {
+
+    background-color: rgb(169, 43, 43);
+}
