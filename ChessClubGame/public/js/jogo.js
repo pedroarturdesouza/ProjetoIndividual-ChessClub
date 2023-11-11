@@ -7,7 +7,7 @@ const introduzirPecas = [
 
     torre, cavalo, bispo, rainha, rei, bispo, cavalo, torre, 
     peao, peao, peao, peao, peao, peao, peao, peao, 
-    '', '', '', '', '', '', '', '', 
+    "", "", "", '', '', '', '', '', 
     '', '', '', '', '', '', '', '', 
     '', '', '', '', '', '', '', '', 
     '', '', '', '', '', '', '', '', 

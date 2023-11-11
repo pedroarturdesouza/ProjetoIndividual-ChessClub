@@ -23,7 +23,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #FBFCF6;
+    background-color: #7D7D7D;
     transition: all .4s ease-in-out;
     z-index: 2;
 }
@@ -54,7 +54,7 @@ body {
     #header .nav ul li {
         font-size: 1rem;
         font-weight: 500;
-        color: var(--secondary-color);
+        color: #FFC745;
         text-transform: uppercase;
         letter-spacing: 1px;
         user-select: none;
@@ -63,7 +63,7 @@ body {
         background-size: 200% 100%;
         background-position: 100%;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        
         transition: all .4s ease-in-out;
         margin: 0 20px;
     }
@@ -118,6 +118,73 @@ body {
     .banner .container p {
     
         font-size: 36px;
-        color: white;
+        color: #D9A93B;
         width: 280px;
     }
+
+    html,
+body {
+    scroll-padding-top: 120px;
+    scroll-behavior: smooth;
+    color: var(--secondary-color);
+    height: 100%;
+}
+
+main {
+    overflow-x: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--background-color);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 30px; }
+
+    #header .column-1 .button {
+
+        padding: 16px 32px;
+        margin-top: 32px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        border: 2px solid black;
+        background-color: #FFC745;
+        border-radius: 40px;
+        color: #00020D;
+        user-select: none;
+        transition: all .4s ease-in-out;
+    }
+
+    #sobre,
+    #equipe {
+        background-color: #1F1F1F;
+    }
+
+
+    #sobre .line-1 {
+        display: flex;
+    }
+    
+    #sobre .line-1 .box {
+       
+        width: 55%;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
