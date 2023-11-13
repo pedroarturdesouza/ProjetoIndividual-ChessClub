@@ -22,3 +22,19 @@
 
     background-color: rgb(169, 43, 43);
 }
+
+.casa svg {
+
+  height: 30px;   
+  width: 30px;  
+  margin: 5px;
+
+}
+
+.black {
+  fill: rgb(29, 29, 29)
+}
+
+.white {
+  fill: rgb(223, 216, 216)
+}
