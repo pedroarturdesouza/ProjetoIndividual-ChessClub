@@ -101,11 +101,12 @@ body {
     }
     
     .banner {
-    
-        
-            background: rgb(176,176,176);
-            background: linear-gradient(0deg, rgba(176,176,176,1) 0%, rgba(112,112,112,1) 35%, rgba(23,23,23,1) 100%); 
-        
+       
+       
+            background-image: url(../assets/img/chess-figures-dark-black-background-close-up_93675-62391.jpg);
+            background-size: cover;
+            background-position: center center; 
+            
     
     }
     
@@ -123,3 +124,4 @@ body {
         color: white;
         width: 280px;
     }
+
