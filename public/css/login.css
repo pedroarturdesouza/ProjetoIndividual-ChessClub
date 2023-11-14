@@ -105,23 +105,23 @@ body {
        
             background-image: url(../assets/img/chess-figures-dark-black-background-close-up_93675-62391.jpg);
             background-size: cover;
-            background-position: center center; 
+            background-position: center ; 
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             
     
     }
     
     .banner .container {
-    
+
+        
         justify-content: center;
         align-items: center;
         height: 620px;
-    
-    }
-    
-    .banner .container p {
-    
-        font-size: 36px;
-        color: white;
-        width: 280px;
-    }
 
+      
+    
+    }
+    
+   
