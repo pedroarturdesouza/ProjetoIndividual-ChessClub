@@ -22,7 +22,9 @@ function criarTabuleiro() {
         const casa = document.createElement('div')
         casa.classList.add('casa')
         casa.innerHTML = introduzirPecas
+        casa.firstChild?.setAttribute('draggable', true) 
         casa.setAttribute('casa-id', i)
+
         // casa.classList.add('bege')
         const linha = Math.floor ( (63 - i ) / 8) + 1
         if ( linha % 2 === 0) {
@@ -46,5 +48,30 @@ function criarTabuleiro() {
     })
 }
 
-criarTabuleiro()
+criarTabuleiro() 
 
+    const todasCasas = document.querySelectorAll("#gameboard .casa");
+
+todasCasas.forEach(casa => {
+    casa.addEventListener('dragstart', dragStart)
+    casa.addEventListener('dragover', dragOver) 
+    casa.addEventListener('drop', dragDrop)   
+})
+
+let startPositionId 
+let draggedElement
+
+function dragStart (e) {
+    startPositionId = e.target.parentNode.getAttribute('casa-id')
+
+    draggedElement = e.target
+}
+
+function dragOver() {
+    e.preventDefault()
+   
+}
+
+function dragDrop() {
+    
+}
