@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #FBFCF6;
+    background-color: #9c9c9c;
     transition: all .4s ease-in-out;
     z-index: 2;
 }
@@ -44,7 +44,7 @@ body {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    color: rgb(224, 224, 224)    ; }
+    color: rgba(224, 224, 224, 0.781)    ; }
 
     #header .nav ul {
         list-style: none;
@@ -124,4 +124,53 @@ body {
     
     }
     
+    .caixa_formulario {
+        background: rgb(78, 78, 78);
+        width: 400px;
+        height: 300px;
+        color: rgb(12, 11, 11);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        padding: 10px;
+    }
+    
+    .caixa_formulario h1 {
+        font-size: 30px;
+    }
+    
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+    
+    .formulario button {
+        margin-top: 10px;
+        background: #030303;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        width: 120px;
+        align-self: center;
+        cursor: pointer;
+    }
+    
+    .formulario input {
+        padding: 10px 15px;
+        text-align: center;
+        border: 2px solid rgb(97, 97, 97);
+        border-radius: 10px;
+    }
+    
+    .formulario span {
+        font-size: 20px;
+    }
    
+    .fraseCadastro {
+        padding: 5px;
+    }
