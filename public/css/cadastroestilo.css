@@ -182,3 +182,14 @@ body {
     .fraseCadastro {
         padding: 5px;
     }
+
+
+    .botaoCadastrar:hover{
+        background-color: white;
+        color: black;
+        transition: 2000ms;
+    }
+    
+    #Cadastrarr  {
+        width: 200px;
+    }
