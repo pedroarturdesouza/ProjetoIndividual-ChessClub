@@ -2,6 +2,8 @@ const gameBoard = document.querySelector("#gameboard")
 const displayJogador = document.querySelector ("#jogador")
 const infoDisplay = document.querySelector("#info-display")
 const width = 8
+let playerGo = 'preto'
+displayJogador.textContent = 'preto'
 
 const introduzirPecas = [
 
@@ -67,11 +69,39 @@ function dragStart (e) {
     draggedElement = e.target
 }
 
-function dragOver() {
-    e.preventDefault()
+function dragOver(e) {
+  e.preventDefault()
    
 }
 
-function dragDrop() {
-    
+function dragDrop(e) {
+    e.stopPropagation()
+    draggedElement.firstChild.classList.contains(playerGo)
+    const taken = e.target.classList.contains('peça')
+
+     e.target.parentNode.append(draggedElement) 
+     e.target.remove()
+     e.target.append(draggedElement)
+    mudarJogador()
+
 }
+
+    function mudarJogador() {
+        if (playerGo === "preto") {
+            playerGo = "branco"
+            displayJogador.textContent = 'branco'
+        } else {
+            playerGo = "preto"
+            displayJogador.textContent = 'preto'
+        }
+    }       
+
+    function inverterIds() {
+        const todasCasas = document.querySelectorAll(".casa")
+        todasCasas.forEach((casa, i) => casa.setAttribute('casa-id', (width * width - 1) - i))
+    }
+
+    function reverterIds() {
+        const todasCasas = document.querySelectorAll(".casa")
+        todasCasas.forEach((casa, i ) => casa.setAttribute('casa-id', i))
+    }

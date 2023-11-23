@@ -125,10 +125,10 @@ body {
     }
     
     .caixa_formulario {
-        background: rgb(78, 78, 78);
+        background: rgba(78, 78, 78, 0.87);
         width: 400px;
         height: 300px;
-        color: rgb(12, 11, 11);
+        color: rgb(201, 201, 201);
         display: flex;
         flex-direction: column;
         justify-content: center;
