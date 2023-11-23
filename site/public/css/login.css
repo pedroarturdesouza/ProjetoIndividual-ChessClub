@@ -1,0 +1,185 @@
+
+*{
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+}
+
+
+
+body {
+    margin: 0;
+    
+}
+
+.header {
+      border-bottom: 3px solid #FBFCF6;
+      margin: 0px 0px 0px 0px;
+      background-color: rgb(15, 14, 14);
+
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9c9c9c;
+    transition: all .4s ease-in-out;
+    z-index: 2;
+}
+
+.header .container  {
+
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container ul {
+  
+    width: 400px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(224, 224, 224, 0.781)    ; }
+
+    #header .nav ul {
+        list-style: none;
+        display: flex;
+        padding-right: 60px;
+    }
+
+    #header .nav ul li {
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--secondary-color);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        user-select: none;
+        cursor: pointer;
+        background-image: linear-gradient(to right, #3ca9c2, #3ca9c2 50%, #313131 50%);
+        background-size: 200% 100%;
+        background-position: 100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all .4s ease-in-out;
+        margin: 0 20px;
+    }
+
+    
+
+    .header a {
+        text-decoration: none;
+        color: rgb(243, 243, 243);
+        text-shadow: 0 0 10px whitesmoke;
+                 
+
+       }
+       #header .nav img {
+        margin: 12px 0 0 80px;
+        height: 80px;
+        cursor: pointer;
+        user-select: none;
+        pointer-events: none;
+    }
+       
+       
+       .header h1 {
+       
+           color: #f1eadf;
+       
+       }
+       .container {
+
+        display: flex;
+        width: 80%;
+        margin:auto;
+    
+    }
+    
+    .banner {
+       
+       
+            background-image: url(../assets/img/chess-figures-dark-black-background-close-up_93675-62391.jpg);
+            background-size: cover;
+            background-position: center ; 
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+    
+    }
+    
+    .banner .container {
+
+        
+        justify-content: center;
+        align-items: center;
+        height: 620px;
+
+      
+    
+    }
+    
+    .caixa_formulario {
+        background: rgba(78, 78, 78, 0.87);
+        width: 400px;
+        height: 300px;
+        color: rgb(222,222, 222);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        padding: 10px;
+    }
+    
+    .caixa_formulario h1 {
+        font-size: 30px;
+    }
+    
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+    
+    .formulario button {
+        margin-top: 10px;
+        background: #030303;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        width: 120px;
+        align-self: center;
+        cursor: pointer;
+    }
+    
+    .formulario input {
+        padding: 10px 15px;
+        text-align: center;
+        border: 2px solid rgb(97, 97, 97);
+        border-radius: 10px;
+    }
+    
+    .formulario span {
+        font-size: 20px;
+    }
+   
+    .fraseCadastro {
+        padding: 5px;
+    }
+.botaoLogin:hover{
+    background-color: white;
+    color: black;
+    transition: 2000ms;
+}
+
+#Loginn  {
+    width: 200px;
+}
