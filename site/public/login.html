@@ -44,6 +44,7 @@
           </div>
       </div>
   </div>
+  <div id="div_erro"></div>
   <script>
 
     
@@ -92,7 +93,7 @@ function entrar() {
                 sessionStorage.ID_USUARIO = json.id;
 
                 // setTimeout(function () {
-                    window.location.href="index.html" 
+                    window.location = "./ChessClubGame/public/index.html" 
                     // alert(`Login com sucesso!`)
                 // }, 1000); // apenas para exibir o loading
 
@@ -100,7 +101,7 @@ function entrar() {
 
         } else {
 
-            console.log("Houve um erro ao tentar realizar o login!");
+            div_erro.innerHTML="Houve um erro ao tentar realizar o login!"
 
             resposta.text().then(texto => {
                 console.error(texto);
