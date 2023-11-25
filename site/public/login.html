@@ -101,7 +101,7 @@ function entrar() {
 
         } else {
 
-            div_erro.innerHTML="Houve um erro ao tentar realizar o login!"
+            alert("Houve um erro ao tentar realizar o login!")
 
             resposta.text().then(texto => {
                 console.error(texto);

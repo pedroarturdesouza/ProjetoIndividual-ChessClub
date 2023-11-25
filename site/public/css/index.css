@@ -267,3 +267,13 @@ body::-webkit-scrollbar-thumb {
             background-color: #d4d4d4;
         }
     
+
+        .footer {
+            height: 100px;
+            width: 100%;
+            background-color: #1e1e1e;
+          }
+          .footer .container .version {
+            font-size: 12px;
+            font-weight: 800;
+          }
