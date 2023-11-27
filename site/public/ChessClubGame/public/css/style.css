@@ -1,3 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  background-color: #deb887;
+}
+
 .header {
   border-bottom: 3px solid #FBFCF6;
   margin: 0px 0px 0px 0px;
@@ -6,13 +16,13 @@
 }
 
 .nav {
-position: fixed;
+/* position: fixed; */
 width: 100%;
 height: 84px;
 display: flex;
 justify-content: space-between;
 align-items: center;
-background-color: #9c9c9c;
+background-color: #7D7D7D;
 transition: all .4s ease-in-out;
 z-index: 2;
 }
@@ -32,7 +42,7 @@ width: 400px;
 list-style: none;
 display: flex;
 justify-content: space-between;
-color: rgba(224, 224, 224, 0.781)    ; }
+color: rgb(224, 224, 224)    ; }
 
 #header .nav ul {
     list-style: none;
@@ -43,7 +53,7 @@ color: rgba(224, 224, 224, 0.781)    ; }
 #header .nav ul li {
     font-size: 1rem;
     font-weight: 500;
-    color: var(--secondary-color);
+    color: #FFC745;
     text-transform: uppercase;
     letter-spacing: 1px;
     user-select: none;
@@ -52,7 +62,7 @@ color: rgba(224, 224, 224, 0.781)    ; }
     background-size: 200% 100%;
     background-position: 100%;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
     transition: all .4s ease-in-out;
     margin: 0 20px;
 }
@@ -75,18 +85,6 @@ color: rgba(224, 224, 224, 0.781)    ; }
 }
    
    
-   .header h1 {
-   
-       color: #f1eadf;
-   
-   }
-
-   body {
-    background-color: #1A1A1A;
-   }
-
-
-
 
 #gameboard {
    width: 320px;
@@ -94,10 +92,9 @@ color: rgba(224, 224, 224, 0.781)    ; }
    display: flex;
    flex-wrap: wrap;
    align-items: center;
-  
-  padding-left: 484px;
-  padding-top: 162px;
-   
+   padding-left: 510px;
+   padding-top: 62px;
+  margin-bottom: 66px;
     
 }
 
@@ -145,4 +142,14 @@ path {
 
 .white {
   fill: rgb(223, 216, 216)
+}
+
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: #1e1e1e;
+}
+.footer .container .version {
+  font-size: 12px;
+  font-weight: 800;
 }

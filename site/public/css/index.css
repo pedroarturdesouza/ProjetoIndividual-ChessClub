@@ -131,6 +131,7 @@ body {
     scroll-behavior: smooth;
     color: var(--secondary-color);
     height: 100%;
+    background-color: black;
 }
 
 main {
@@ -191,6 +192,7 @@ body::-webkit-scrollbar-thumb {
         align-items: center;
         font-size: 28px;
         text-decoration: none;
+        margin-top: 34px;
     }
 
     #sobre .line-2 .box {
@@ -248,19 +250,23 @@ body::-webkit-scrollbar-thumb {
         justify-content: center;
         align-items: center;
         width: 551px;
-        height: 343px;
+        height: 496px;
         
         text-align: justify;
        
         border-radius: 30px;
         box-shadow: 6px 6px 0 var(--border-color); 
+        margin-left: 23px;
+        padding-left: 61px
     }
       
     
         .column-2 img{
-        height: 430px;
-        pointer-events: none;
-        user-select: none;
+            height: 353px;
+            pointer-events: none;
+            user-select: none;
+            padding-top: 44px;
+            padding-left: 32px;
     }
 
         #competitivo {
@@ -277,3 +283,52 @@ body::-webkit-scrollbar-thumb {
             font-size: 12px;
             font-weight: 800;
           }
+
+          #importancia .column-3 {
+            display: flex;
+            padding-top: 54px;
+            margin-left: 76px;
+          }
+
+          #importancia .column-3 .box-3 {
+       
+            width: 55%;
+            color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 28px;
+            text-decoration: none;
+            padding-left: 39px;
+        }
+
+        .column-3 img{
+            height: 403px;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        #sobreMim .column-4 .box-4 {
+
+            
+            width: 58%;
+            color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 23px;
+            text-decoration: none;
+            padding-left: 100px;
+
+
+
+        }
+
+        #sobreMim .column-4  {
+
+            display: flex;
+            padding-top: 100px;
+            margin-left: 76px;
+
+
+        }
