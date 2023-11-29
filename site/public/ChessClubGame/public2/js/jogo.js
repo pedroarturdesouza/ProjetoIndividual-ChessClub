@@ -14,7 +14,7 @@ const introduzirPecas = [
     '', '', '', '', '', '', '', '',
     '', '', '', '', '', '', '', '',
     peao, peao, peao, peao, peao, peao, peao, peao,
-    torre, cavalo, bispo, rainha, rei, bispo, cavalo, torre,
+    torre, cavalo, bispo, rainha, rei, bispo, cavalo, torre
 
 ]
 
@@ -89,13 +89,14 @@ function dragDrop(e) {
 
               e.target.parentNode.append(draggedElement) 
               e.target.remove()
-              mudarJogador()
+              changePlayer()
               return
         }
         // pra dai então checar isso 
         if (taken && !takenByOpponent) {
             infoDisplay.textContent = "você não pode jogar aí!"
             setTimeout(() => infoDisplay.textContent = "", 2000)
+            
             return
         }
         if (valid) {
@@ -106,16 +107,17 @@ function dragDrop(e) {
         
      }    
     e.target.append(draggedElement)
-    mudarJogador()
+    changePlayer()
 
 }
 
-function mudarJogador() {
+function changePlayer() {
     if (playerGo === "preto") {
-        reverterIds()
+        inverterIds()
         playerGo = "branco"
         displayJogador.textContent = 'branco'
     } else {
+        reverterIds()
         playerGo = "preto"
         displayJogador.textContent = 'preto'
     }
@@ -133,7 +135,7 @@ function reverterIds() {
 
 
 function checkIfValid(target) {
-    const targetId = Number(target.getAttribute('casa-id')) || Number(target.parentNode.getAttribute)('casa-id')
+    const targetId = Number(target.getAttribute('casa-id')) || Number(target.parentNode.getAttribute('casa-id'))
     const startId = Number(startPositionId) 
     const peça = draggedElement.id 
     console.log('targetId', targetId)
@@ -146,9 +148,10 @@ function checkIfValid(target) {
             if (
                 
                 starterRow.includes(startId) && startId + width * 2 === targetId || startId + width === targetId || 
+                startId + width === targetId ||
                 startId + width - 1 === targetId && document.querySelector(`[casa-id="${startId + width - 1}"]`).firstChild ||
                 startId + width + 1 === targetId && document.querySelector(`[casa-id="${startId + width + 1}"]`).firstChild
-                 ){
+                 ) {
                 return true
             }
     }
