@@ -1,1 +1,1 @@
-# ProjetoIndividual-ChessClub
+# Projeto Individual - ChessClub
