@@ -22,7 +22,20 @@ function cadastrar(nome, email, senha) {
     return database.executar(instrucao);
 }
 
+function pegar(pontos) {
+    
+    var instrucao = `
+
+    INSERT INTO resultadoQuiz VALUES ( null, '${pontos}'
+        );
+        
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
 module.exports = {
     autenticar,
-    cadastrar
+    cadastrar,
+    pegar
 };

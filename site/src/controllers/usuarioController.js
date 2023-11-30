@@ -70,7 +70,33 @@ function cadastrar(req, res) {
     }
 }
 
+function pegar(req, res) {
+
+    var pontuacao = req.body.pontosServer
+
+        usuarioModel.pegar(pontuacao)
+            .then(
+                function (resultadoPegar) {
+                    console.log(`\nResultados encontrados: ${resultadoPegar.length}`);
+                    console.log(`Resultados: ${JSON.stringify(resultadoPegar)}`); // transforma JSON em String
+                    res.json({
+                    
+                    })
+                    
+                }
+            ).catch(
+                function (erro) {
+                    console.log(erro);
+                    console.log("\nHouve um erro ao realizar o login! Erro: ", erro.sqlMessage);
+                    res.status(500).json(erro.sqlMessage);
+                }
+            );
+    }
+
+
+
 module.exports = {
     autenticar,
-    cadastrar
+    cadastrar,
+    pegar
 }

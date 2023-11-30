@@ -1,4 +1,4 @@
-/* Aula 20 MaiaQuiz  */
+
 let titulo     = document.querySelector('h1')
 let instrucoes = document.querySelector('#instrucoes')
 let aviso      = document.querySelector('#aviso')
@@ -263,17 +263,32 @@ function fimDoJogo() {
 
     instrucoes.classList.add('placar')
 
+    fetch ("/usuarios/pegar", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  // crie um atributo que recebe o valor recuperado aqui
+                  // Agora vá para o arquivo routes/usuario.js
+                 
+                  pontosServer: pontos
+                }),
+            }).then(res => {
+                console.log(res);
+            });
+
     // OCULTAR O ARTICLE DA QUESTAO
     articleQuestoes.style.display = 'none'
 
-    setTimeout(function() {
-        pontos = 0 // zerar placar
-        //location.reload();
-        instrucoes.classList.remove('placar')
-        // REINICIAR O JOGO
-        articleQuestoes.style.display = 'block'
-        proximaQuestao(1)
-        instrucoes.textContent = 'Leia a questão e clique na resposta correta'
-    }, 8000)
+    // setTimeout(function() {
+    //     pontos = 0 // zerar placar
+    //     //location.reload();
+    //     instrucoes.classList.remove('placar')
+    //     // REINICIAR O JOGO
+    //     articleQuestoes.style.display = 'block'
+    //     proximaQuestao(1)
+    //     instrucoes.textContent = 'Leia a questão e clique na resposta correta'
+    // }, 8000)
 
 }
