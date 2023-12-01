@@ -73,8 +73,10 @@ function cadastrar(req, res) {
 function pegar(req, res) {
 
     var pontuacao = req.body.pontosServer
+    var idUsuario = req.params.idUsuario
+    
 
-        usuarioModel.pegar(pontuacao)
+        usuarioModel.pegar(pontuacao, idUsuario)
             .then(
                 function (resultadoPegar) {
                     console.log(`\nResultados encontrados: ${resultadoPegar.length}`);
@@ -93,10 +95,20 @@ function pegar(req, res) {
             );
     }
 
+    function listarPontuacao(req, res){
+        usuarioModel.listarPontuacao()
+            .then(function(result){
+                res.status(200).json(result)
+            }).catch(function(error){
+                console.log(error);
+            })
 
+
+    }
 
 module.exports = {
     autenticar,
     cadastrar,
-    pegar
+    pegar,
+    listarPontuacao 
 }

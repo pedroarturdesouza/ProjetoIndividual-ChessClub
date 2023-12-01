@@ -22,12 +22,23 @@ function cadastrar(nome, email, senha) {
     return database.executar(instrucao);
 }
 
-function pegar(pontos) {
+function pegar(pontos, idUsuario) {
     
     var instrucao = `
 
-    INSERT INTO resultadoQuiz VALUES ( null, '${pontos}'
+    INSERT INTO resultadoQuiz VALUES ( null, '${pontos}', ${idUsuario}
         );
+        
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
+function listarPontuacao() {
+    
+    var instrucao = `
+
+    select resultado, nome from resultadoQuiz join usuario on fkUsuario = id group by nome, resultado ORDER BY resultado desc;
         
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
@@ -37,5 +48,6 @@ function pegar(pontos) {
 module.exports = {
     autenticar,
     cadastrar,
-    pegar
+    pegar,
+    listarPontuacao
 };
